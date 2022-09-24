@@ -1,2 +1,10 @@
 <h1>{{title}}</h1>
-<app-blogs></app-blogs>
+<!-- <app-blogs></app-blogs> -->
+<nav>
+    <ul>
+        <li><a routerLink="/">Home</a></li>
+        <li><a routerLink="/blogs">Blogs</a></li>
+    </ul>
+</nav>
+<router-outlet></router-outlet>
+<app-messages></app-messages>

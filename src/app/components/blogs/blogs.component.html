@@ -1,0 +1,13 @@
+
+  <h2>My blogs</h2>
+  <ul class="blogs">
+      <li *ngFor="let blogB of blogData">
+          <button [class.selected]="blogB.name === blog.name" type="button" (click)="onSelect(blogB)">
+          <span class="badge">{{blogB.id}} </span>
+          <span class="name">{{blogB.name}}={{blogB.name === blog.name}}</span>
+          </button>
+      </li>
+  </ul>
+
+
+<app-blog-detail [blog]="blog"></app-blog-detail>
